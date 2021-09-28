@@ -29,8 +29,8 @@ There are two primary approaches that we can take to solving this problem (class
 
 In the first approach, supervised classification, we first remove all of the unknowns from the “features” dataset. This leaves us with only transactions that are known to be licit or illicit. We then have two approaches for splitting this remaining data into a training set and a test set. 
 
-Take all transactions that occurred before time t (for some arbitrary 0 < t <= 49).
-Take a random split of training and test from across all of the time steps.
+1. Take all transactions that occurred before time t (for some arbitrary 0 < t <= 49).
+1. Take a random split of training and test from across all of the time steps.
 
 Both approaches are valid and have appropriate uses and advantages in a real-world setting. We decide to adopt the second approach to splitting the data. 
 
