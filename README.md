@@ -19,9 +19,9 @@ First we load the data in a data frame, we then aim to understand the data: dime
 
 We then provide a plot across the time steps where the count of licit, illicit and unknown transactions are counted. A simpler plot follows whereby a bar chart of the count of total unknown, licit, and illicit transactions are displayed. 
 
-![bar.png](Bar Chart)
+![Count Plot](bar.png)
 
-![time.png](Time Chart)
+![Time Plot](time.png)
 
 There are two primary approaches that we can take to solving this problem (classifying the unknowns). We can utilise a supervised classification approach (SVM, random forest, Adaboost) or we can utilise a semi-supervised approach on the graph structure (accounting for edges too).
 
@@ -45,7 +45,7 @@ We provide a table of the accuracy score (more metrics should have been consider
 
 We then apply the best performing (wrt accuracy) model from these onto the unknown dataset and observe the distribution of predicted licit to illicit transactions.
 
-![predict.png](Time Chart)
+![Prediction Plot](predict.png)
 
 
 **Semi-supervised, Graphs and DeepWalk**
