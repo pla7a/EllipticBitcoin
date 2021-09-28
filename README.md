@@ -62,3 +62,5 @@ Experimentation with the merging of these data may be worth considering in the f
 **Further**
 
 When searching for ways to incorporate feature information, I came across [Label-GCN](https://arxiv.org/pdf/2104.02153.pdf) published partly by Elliptic and thus using the same dataset. This paper provides a manner in which initial labels can be incorporated into the graph structure and thus utilised by the GCN. This may partially answer my final question, however it is in a GCN-setting and not the DeepWalk embedding + semi-supervised algorithm setting. 
+
+Class imbalance is also an issue that should be addressed and compared, the initial set is around 40k : 5k (licit : illicit). In a real-world setting, one might imagine that a false positive is a greater hassle (economically) for the company than a false negative (where they can just dig deeper into the user). Other metrics (precision, sensitivity) may be worth evaluating in this context. 
